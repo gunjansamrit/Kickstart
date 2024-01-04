@@ -1,0 +1,17 @@
+/* userdetail.css */
+
+.user-detail {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-detail h2 {
+    color: #333;
+  }
+  
+  .user-detail p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  

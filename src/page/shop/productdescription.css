@@ -1,0 +1,30 @@
+/* productdescription.css */
+
+.product-description {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .product-description img {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .product-description .description {
+    flex-grow: 1;
+    max-width: 400px; /* Set a max-width for the description box */
+  }
+  
+  .product-description p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-description p b {
+    color: #3498db;
+  }
+  

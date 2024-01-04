@@ -1,0 +1,120 @@
+/* shop.css */
+
+:root {
+  --primary-color: #3498db; /* Set your primary color */
+  --text-color: #333; /* Set your text color */
+  --transition-duration: 0.3s; /* Set transition duration */
+}
+
+.shop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.shopTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shopTitle h1 {
+  font-size: 2em;
+  color: var(--text-color);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #fff;
+  transition: transform var(--transition-duration) ease;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  transition: transform var(--transition-duration) ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  transition: color var(--transition-duration) ease;
+}
+
+.product:hover .product-title {
+  color: var(--primary-color);
+}
+
+.product-price {
+  font-size: 1.1em;
+  color: var(--primary-color);
+  transition: color var(--transition-duration) ease;
+}
+
+.product:hover .product-price {
+  color: var(--text-color);
+}
+
+
+/* shop.css */
+
+.shopTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shopTitle h1 {
+  font-size: 3em;
+  position: relative;
+  display: inline-block;
+  color: #3498db; /* Set your desired color */
+  font-family: 'Arial', sans-serif;
+}
+
+.shopTitle h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #3498db; /* Set your desired color */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.shopTitle h1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.shopTitle h1 span {
+  display: inline-block;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-in-out;
+}
+
+.shopTitle h1:hover span {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+
